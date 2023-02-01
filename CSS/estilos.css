@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+#img-logo {
+    width: 180px;
+    margin: 5px auto;
+    display: block;
+
+}
+
+
+#titular1 {
+    padding-left: 150px;
+    color: #16498c;
+
+}
+
+.banner-top {
+    background-image: url(/recursos/banner-header.png);
+    height: 300px;
+    padding: 150px;
+    background-color: #F2F1DF;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 800px;
+}
+
+.banner-top h2 {
+    padding-top: 50px;
+    font-size: 60pt;
+    font-weight: bold;
+    color: #f24822;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #16498c;
+}
+
+ul a {
+    text-decoration: none;
+    color: #F2F1DF;
+}
+
+.titulares-comunes {
+
+    color: #f24822;
+    padding-left: 150px;
+}
+
+#footer {
+
+    font-style: italic;
+    font-size: small;
+    padding-left: 150px;
+    background-color: black;
+    padding: 30px;
+    color: #F2F1DF;
+}
+
+.parrafo {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.servicios-ol {
+    list-style-type: circle;
+    padding-left: 150px;
+    line-height: 35px;
+}
+
+.bajadas {
+    font-size: 15px;
+    color: #181727;
+    padding-left: 150px;
+}
+
+#img-trabajos {
+    width: 400px;
+    justify-items: center;
+}
+
+.work {
+    padding-left: 150px;
+    padding-top: 25px;
+}
+
+.grid-container {
+    display: grid;
+    background-color: #F2F1DF;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.7fr;
+    grid-template-areas:
+        "juli marc juampa"
+        "titulo1 titulo2 titulo3"
+        "bajada1 bajada2 bajada3"
+        "texto1 texto2 texto3";
+    margin-top: 2rem;
+    padding-right: 4rem;
+}
+
+.grid-container div img {
+    height: 22vh;
+    display: flex;
+}
+
+.juli {
+    grid-area: juli;
+}
+
+.juli img {
+    height: 70%;
+    padding-left: 150px;
+    margin-top: 2rem;
+}
+
+.marc {
+    grid-area: marc;
+}
+
+.marc img {
+    height: 70%;
+    padding-left: 150px;
+    margin-top: 2rem;
+}
+
+.juampa {
+    grid-area: juampa;
+
+}
+
+.juampa img {
+    height: 70%;
+    padding-left: 150px;
+    margin-top: 2rem;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+    color: #f24822;
+    padding-left: 150px;
+    font-size: 20pt;
+    font-weight: bold;
+
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    color: #f24822;
+    padding-left: 150px;
+    font-size: 20pt;
+    font-weight: bold;
+
+}
+
+.titulo3 {
+    grid-area: titulo3;
+    color: #f24822;
+    padding-left: 150px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.bajada1 {
+    grid-area: bajada1;
+    padding-left: 150px;
+    font-weight: bold;
+    align-items: baseline;
+}
+
+.bajada2 {
+    grid-area: bajada2;
+    padding-left: 150px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.bajada3 {
+    grid-area: bajada3;
+    padding-left: 150px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.texto1 {
+    grid-area: texto1;
+    padding-left: 150px;
+    font-size: small;
+}
+
+.texto2 {
+    grid-area: texto2;
+    padding-left: 150px;
+    font-size: small;
+}
+
+.texto3 {
+    grid-area: texto3;
+    padding-left: 150px;
+    font-size: small;
+}
+
+@media (max-width: 700px) {
+    ul {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .banner-top h2 {
+        padding-top: 50px;
+        font-size: 50pt;
+    }
+
+    .grid-container {
+        display: grid;
+        background-color: #F2F1DF;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (3, 0.1fr 0.1fr 0.2fr 0.7fr);
+        grid-template-areas:
+            "juli"
+            "titulo1"
+            "bajada1"
+            "texto1"
+            "marc"
+            "titulo2"
+            "bajada2"
+            "texto2"
+            "juampa"
+            "titulo3"
+            "bajada3"
+            "texto3";
+        padding-bottom: 30px
+    }
+
+    .parrafo {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    .grid-container div {
+        padding-left: 50px;
+        text-align: center;
+        padding-right: 50px;
+
+    }
+
+    #titular1 {
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    .titulares-comunes {
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    .main {
+        margin-bottom: none;
+    }
+}
