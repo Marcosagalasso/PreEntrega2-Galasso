@@ -84,7 +84,7 @@ ul a {
 .bajadas {
     font-size: 15px;
     color: #181727;
-    padding-left: 150px;
+    text-align: center;
 }
 
 #img-trabajos {
@@ -178,21 +178,21 @@ ul a {
     grid-area: bajada1;
     padding-left: 150px;
     font-weight: bold;
-    
+
 }
 
 .bajada2 {
     grid-area: bajada2;
     padding-left: 150px;
     font-weight: bold;
-    
+
 }
 
 .bajada3 {
     grid-area: bajada3;
     padding-left: 150px;
     font-weight: bold;
-    
+
 }
 
 .texto1 {
@@ -248,9 +248,10 @@ ul a {
             "texto3";
         padding: 2rem 2rem;
         margin-top: 0;
-        
-        
+
+
     }
+
     .juli img {
         margin-top: 0;
     }
@@ -263,7 +264,7 @@ ul a {
     .grid-container div {
         padding-left: 50px;
         text-align: center;
-        padding:0;
+        padding: 0;
     }
 
     #titular1 {
@@ -281,37 +282,37 @@ ul a {
     }
 
     .grid-container div img {
-    padding: 0;
+        padding: 0;
 
     }
 
     #titular1 {
         padding: 0;
-}
+    }
 
-.titulares-comunes {
-    padding: 0;
-}
+    .titulares-comunes {
+        padding: 0;
+    }
 
-.banner-top h2 {
-    padding-top: 0;
-    font-size: 40pt;
-    font-weight: bold;
-    color: #f24822;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    .banner-top h2 {
+        padding-top: 0;
+        font-size: 40pt;
+        font-weight: bold;
+        color: #f24822;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
 
-}
+    }
 
-.banner-top {
-    background-image: url(/recursos/banner-header.png);
-    height: 150px;
-    padding: 80px;
-    background-color: #F2F1DF;
-    background-size: 600px;
-    background-repeat: no-repeat;
-    background-position: 110px;
-}
+    .banner-top {
+        background-image: url(/recursos/banner-header.png);
+        height: 150px;
+        padding: 80px;
+        background-color: #F2F1DF;
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: 110px;
+    }
 
 }
 
@@ -320,5 +321,70 @@ ul a {
         flex-direction: column;
         padding: 30px;
         align-items: center;
+    }
+
+    .banner-top h2 {
+        padding-top: 5rem;
+        font-size: 30pt;
+        font-weight: bold;
+        color: #f24822;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .banner-top {
+        background-image: url(/recursos/banner-header.png);
+        height: 240px;
+        padding: 0px;
+        background-color: #F2F1DF;
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: 80px;
+    }
+
+    #titular1 {
+        font-size: x-large;
+    }
+
+    .titulares-comunes {
+        font-size: large;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        background-color: #16498c;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .servicios-ol {
+        padding: 0 3rem;
+    }
+
+    .parrafo {
+        padding: 8vw;
+        text-align: center;
+        font-size: small;
+    }
+
+    #img-trabajos {
+        width: 200px;
+    }
+
+    .work {
+        padding-left: 120px;
+        padding-top: 25px;
+    }
+
+    .bajadas {
+        font-size: 15px;
+        color: #181727;
+        text-align: center;
     }
 }
