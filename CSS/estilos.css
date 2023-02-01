@@ -109,6 +109,7 @@ ul a {
         "texto1 texto2 texto3";
     margin-top: 2rem;
     padding-right: 4rem;
+    justify-items: center
 }
 
 .grid-container div img {
@@ -177,44 +178,47 @@ ul a {
     grid-area: bajada1;
     padding-left: 150px;
     font-weight: bold;
-    align-items: baseline;
+    
 }
 
 .bajada2 {
     grid-area: bajada2;
     padding-left: 150px;
     font-weight: bold;
-    align-items: center;
+    
 }
 
 .bajada3 {
     grid-area: bajada3;
     padding-left: 150px;
     font-weight: bold;
-    align-items: center;
+    
 }
 
 .texto1 {
     grid-area: texto1;
     padding-left: 150px;
     font-size: small;
+    text-align: left;
 }
 
 .texto2 {
     grid-area: texto2;
     padding-left: 150px;
     font-size: small;
+    text-align: left;
 }
 
 .texto3 {
     grid-area: texto3;
     padding-left: 150px;
     font-size: small;
+    text-align: left;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     ul {
-        flex-direction: column;
+        flex-direction: row;
         padding: 30px;
         align-items: center;
     }
@@ -242,20 +246,24 @@ ul a {
             "titulo3"
             "bajada3"
             "texto3";
-        padding-bottom: 30px
+        padding: 2rem 2rem;
+        margin-top: 0;
+        
+        
+    }
+    .juli img {
+        margin-top: 0;
     }
 
     .parrafo {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding: 5vw;
         text-align: center;
     }
 
     .grid-container div {
         padding-left: 50px;
         text-align: center;
-        padding-right: 50px;
-
+        padding:0;
     }
 
     #titular1 {
@@ -270,5 +278,47 @@ ul a {
 
     .main {
         margin-bottom: none;
+    }
+
+    .grid-container div img {
+    padding: 0;
+
+    }
+
+    #titular1 {
+        padding: 0;
+}
+
+.titulares-comunes {
+    padding: 0;
+}
+
+.banner-top h2 {
+    padding-top: 0;
+    font-size: 40pt;
+    font-weight: bold;
+    color: #f24822;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.banner-top {
+    background-image: url(/recursos/banner-header.png);
+    height: 150px;
+    padding: 80px;
+    background-color: #F2F1DF;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 110px;
+}
+
+}
+
+@media (max-width: 576px) {
+    ul {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
     }
 }
